@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.geektech.hm.databinding.FragmentPhotoItemBinding
+import com.geektech.hm.databinding.PhotoItemBinding
 
 class PhotoAdapter(
     val PhotoList: ArrayList<Photo>,
@@ -14,7 +14,7 @@ class PhotoAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoViewHolder {
         return PhotoViewHolder(
-            FragmentPhotoItemBinding.inflate(
+            PhotoItemBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
@@ -28,12 +28,12 @@ class PhotoAdapter(
 
     override fun getItemCount(): Int = selectedPhotos.size
 
-    inner class PhotoViewHolder(private val binding: FragmentPhotoItemBinding): ViewHolder(binding.root){
+    inner class PhotoViewHolder(private val binding: PhotoItemBinding): ViewHolder(binding.root){
         fun bind() {
             val item = PhotoList[adapterPosition]
-            binding.apply {
-                photoIv.loadImage(item.image)
-            }
+//            binding.apply {
+//                photoIv.loadImage(item.image)
+//            }
 
 //            itemView.setOnClickListener {
 //                onClick(adapterPosition)

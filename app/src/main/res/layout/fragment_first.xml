@@ -21,7 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        tools:listitem="@layout/item" />
+        app:spanCount="3"
+        tools:listitem="@layout/photo_item" />
 
     <Button
         android:layout_width="wrap_content"

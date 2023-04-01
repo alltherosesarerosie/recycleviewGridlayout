@@ -54,4 +54,7 @@ dependencies {
 
 //    circle indicator
     implementation 'me.relex:circleindicator:2.1.6'
+
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
 }
